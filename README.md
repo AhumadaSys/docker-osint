@@ -25,9 +25,16 @@ La idea es disponer de un entorno modular para investigaciones OSINT, facilitand
 ```text
 ├── metadata
 │   ├── data
+│   │   └── DTE y DCE.pdf
 │   ├── Dockerfile
 │   └── README.md
-└── README.md
+├── osint-phone
+│   ├── Dockerfile
+│   └── README.me
+├── README.md
+└── social
+    ├── Dockerfile
+    └── README.me
 
 ```
 
@@ -45,28 +52,6 @@ Esto permite:
 * Evitar dependencias innecesarias.
 * Actualizar cada categoría de forma independiente.
 * Comprender mejor qué herramientas pertenecen a cada área de OSINT.
-
----
-
-## Uso
-
-Cada categoría se construye de forma independiente.
-
-Ejemplo:
-
-```bash
-docker build -t metadata metadata/
-```
-
-Para ejecutar la imagen montando un directorio con archivos a analizar:
-
-```bash
-docker run -it --rm \
-    -v "$PWD/data:/data" \
-    metadata
-```
-
-Dentro del contenedor, los archivos estarán disponibles en `/data`.
 
 ---
 

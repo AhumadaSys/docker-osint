@@ -1,0 +1,17 @@
+# social-phone
+
+=========== Herramientas utilizadas en social-phone ===========
+-phoneinfoga
+
+=========== Crear imagen ===========
+docker build -t phoneinfoga .
+
+=========== Inicar contenedor ===========
+docker run --rm -it \
+  -p 5000:5000 \
+  phoneinfoga
+
+=========== Usar phoneinfoga ===========
+http://localhost:5000
+ó
+docker run --rm phoneinfoga scan -n "+5493511234567"
