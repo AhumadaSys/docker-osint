@@ -26,7 +26,6 @@ La idea es disponer de un entorno modular para investigaciones OSINT, facilitand
 .
 ├── metadata
 │   ├── data
-│   │   └── DTE y DCE.pdf
 │   ├── Dockerfile
 │   └── README.md
 ├── osint-phone
@@ -41,7 +40,7 @@ La idea es disponer de un entorno modular para investigaciones OSINT, facilitand
     ├── Dockerfile
     └── README.me
 
-7 directories, 10 files
+7 directories, 9 files
 ```
 
 Cada directorio representa una imagen Docker independiente con herramientas especializadas para una determinada categoría de OSINT.
