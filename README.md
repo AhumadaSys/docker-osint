@@ -23,19 +23,25 @@ La idea es disponer de un entorno modular para investigaciones OSINT, facilitand
 ## Estructura del proyecto
 
 ```text
+.
 ├── metadata
 │   ├── data
 │   │   └── DTE y DCE.pdf
 │   ├── Dockerfile
 │   └── README.md
 ├── osint-phone
-│   ├── Dockerfile
-│   └── README.me
+│   ├── phoneinfoga
+│   │   ├── Dockerfile
+│   │   └── README.me
+│   └── phonextract
+│       ├── dockerfile
+│       └── README.me
 ├── README.md
 └── social
     ├── Dockerfile
     └── README.me
 
+7 directories, 10 files
 ```
 
 Cada directorio representa una imagen Docker independiente con herramientas especializadas para una determinada categoría de OSINT.

@@ -7,11 +7,12 @@
 docker build -t phoneinfoga .
 
 =========== Inicar contenedor ===========
-docker run --rm -it \
-  -p 5000:5000 \
-  phoneinfoga
+Para verlo de la web (recomendado)
+docker run --rm -p 5000:5000 sundowndev/phoneinfoga:latest serve
+
+Para verlo de la terminal
+docker run --rm sundowndev/phoneinfoga:latest scan -n +5491122334455
 
 =========== Usar phoneinfoga ===========
 http://localhost:5000
-ó
-docker run --rm phoneinfoga scan -n "+5493511234567"
+
